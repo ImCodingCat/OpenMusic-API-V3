@@ -1,0 +1,33 @@
+{
+  "name": "sbm_backend",
+  "version": "1.0.0",
+  "description": "OpenMusic API v1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src",
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate"
+  },
+  "author": "mdavap",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.12",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/jwt": "^3.2.0",
+    "amqplib": "^0.10.5",
+    "auto-bind": "^4.0.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "joi": "^17.13.3",
+    "nanoid": "^3.1.20",
+    "nodemailer": "^6.9.16",
+    "pg": "^8.13.1",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "node-pg-migrate": "^7.9.0"
+  }
+}
